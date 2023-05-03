@@ -1,0 +1,24 @@
+<div class="beer-by-id-container">
+        <h1>Details about {{this.beer.name}}</h1>
+    {{>beerpartial this.beer}}
+    <p><strong>ABV: </strong>{{this.beer.abv}}</p>
+    <p><strong>IBU: </strong>{{this.beer.ibu}}</p>
+    <p><strong>Target FG: </strong>{{this.beer.target_fg}}</p>
+    <p><strong>Target OG: </strong>{{this.beer.target_og}}</p>
+    <p><strong>EBC: </strong>{{this.beer.ebc}}</p>
+    <p><strong>SRM: </strong>{{this.beer.srm}}</p>
+    <p><strong>PH: </strong>{{this.beer.ph}}</p>
+    <p><strong>Attenuation Level: </strong>{{this.beer.attenuation_level}}</p>
+    <p><strong>Volume: </strong>{{this.beer.volume.value}} litres</p>
+    <p><strong>Boil Volume: </strong>{{this.beer.boil_volume.value}} litres</p>
+    <h3>Method:</h3>
+    <p><strong>Mash temperature:</strong></p>
+    <p>Temperature: {{this.beer.method.mash_temp}} celsius</p>
+    <p>Duration: {{this.beer.method.mash_temp.duration}}</p>
+
+    <p><strong>Fermentation: </strong>{{this.beer.method.fermentation.value}} celsius</strong></p>
+
+    <p><strong>Twist: </strong>{{this.beer.method.twist}}</strong></p>
+
+    <p><strong>Ingredients: </strong>{{this.beer.ingredients}}</p>
+</div>
